@@ -13,6 +13,11 @@ html {
   width: 100%;
 }
 
+@media only screen and (min-width: 481px) {
+  .mobileicon {
+    display: none;
+  }
+}
 
 .logo {
   float: left;
@@ -61,6 +66,54 @@ p {
 .header .p {
   text-align: left;
   margin-right: 24px:
+}
+
+@media only screen and (max-width: 480px) {
+  .headercontainer {
+    background-color: hsl(0, 100%, 100%);
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+  }
+
+.mobileicon {
+  height: 4rem;
+}
+
+  .logo {
+    display: none;
+  }
+
+  .logoimg {
+   display: none;
+  }
+
+  .logo h1 {
+  display: none;
+  }
+
+  #bold {
+   display: none;
+  }
+
+  #light {
+   display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .header .p {
+    display: none;
+  }
 }
 
 /* Banner */
