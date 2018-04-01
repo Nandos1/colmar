@@ -137,6 +137,12 @@ p {
   margin-bottom: 4rem;
 }
 
+@media only screen and (min-width: 481px) {
+  .leftimagemobile {
+    display: none;
+  }
+}
+
 .banner .right {
   display: flex;
   flex-direction: column;
@@ -179,6 +185,79 @@ h3 {
   color: hsl(0, 100%, 100%);
   padding: 1rem 5rem 1rem 5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: block;
+    background-color: hsl(0, 0%, 85%);
+  }
+
+  .left {
+    background-image: url("resources/capstone_colmar_assets/images/banner.jpg")
+    width: 0%;
+    margin: 0rem 0rem 4rem 0rem;
+    overflow: hidden;
+  }
+
+.leftimagemobile {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+  .leftimage {
+    display: none;
+  }
+
+  .banner .right {
+    display: block;
+    background-color: hsl(0, 0%, 85%);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .righttext {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .righttext h2,
+  h3 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 25%);
+  }
+
+  .righttext h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0rem 0rem 4rem 2rem;
+  }
+
+  .righttext h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+
+  .button {
+    background-color: hsl(0, 0%, 50%);
+    margin-bottom: 4rem;
+    width: 85%;
+  }
+
+  .button:hover {
+    background-color: hsl(0, 0%, 50%);
+    width: 85%;
+  }
+
+  .button h3 {
+    font-weight: 300;
+    color: hsl(0, 100%, 100%);
+    padding: 1rem 5rem 1rem 5rem;
+    text-align: center;
+  }
 }
 
 /* Information */
