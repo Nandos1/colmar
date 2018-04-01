@@ -572,7 +572,7 @@ h4 {
 .thesis {
   display: flex;
   background-color: hsl(0, 100%, 100%);
-  height: 100rem;
+  margin-bottom: 4rem;
 }
 
 .left {
@@ -627,6 +627,42 @@ video {
   font-weight: 400;
 }
 
+@media only screen and (min-width: 481px) {
+  .mobilevideo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .thesistitle {
+    margin: 0;
+  }
+
+  .thesistitle h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 2rem 0rem 2rem 0rem;
+    text-align: center;
+  }
+
+  .mobilevideo {
+    width: 100%;
+  }
+
+  .thesis {
+    display: block;
+    background-color: hsl(0, 100%, 100%);
+  }
+
+  .left {
+    display:none;
+  }
+
+  .right1 {
+    display: none;
+  }
+}
+
 /* copyright */
 
  .copyright {
@@ -648,4 +684,10 @@ video {
   font-weight: 300;
   float: right;
   margin-right: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright h5 {
+    display: none;
+  }
 }
