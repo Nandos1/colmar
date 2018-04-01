@@ -383,14 +383,12 @@ h5 {
     width: 100%;
     margin: 2rem;
     border-left: 0;
-    border: black 1px solid;
   }
 
   .box {
     display: block;
     width: 100%;
     margin: 0rem;
-      border: black 2px solid;
   }
 
   .box:hover {
@@ -403,13 +401,11 @@ h5 {
     width: 0rem;
     height: auto;
     margin: 0;
-    border: black 2px solid;
   }
 
   .boximage {
     width: 100%;
     height: auto;
-    border: black 1px solid;
   }
 
   .text {
@@ -417,7 +413,6 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: black 1px solid;
   }
 
   .text h2,
