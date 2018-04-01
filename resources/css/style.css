@@ -1,0 +1,365 @@
+html {
+  font-size: 8px;
+  font-family: Helvetica;
+}
+
+/* Header */
+
+.headercontainer {
+  background-color: hsl(0, 100%, 100%);
+  top: 0;
+  display: flex;
+  height: 8rem;
+  width: 100%;
+}
+
+
+.logo {
+  margin-left: 3rem;
+  display: flex;
+  vertical-align: baseline;
+}
+
+.logoimg {
+  height: 8rem;
+  position: relative;
+  top: 0.5rem;
+}
+
+.logo h1 {
+  font-family: "Open Sans", serif;
+  font-size: 3rem;
+  color: hsl(0, 0%, 0.85%);
+  position: relative;
+  bottom: 0.5rem;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+#light {
+  font-weight: 300;
+}
+
+.menu {
+  float: right;
+  display: flex;
+  padding-right: 3rem;
+  height: 8rem;
+  border: black solid 4px;
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.header .p {
+  text-align: left;
+  margin-right: 24px:
+}
+
+/* Banner */
+
+
+.banner {
+  display: flex;
+  background-color: hsl(0, 0%, 85%);
+}
+
+.left {
+  width: 60%;
+  margin: 4rem 3rem 0rem 3rem;
+}
+
+.leftimage {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.banner .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 85%);
+}
+
+.righttext {
+  width: 75%;
+}
+
+.righttext h2,
+h3 {
+  font-family: "Open Sans", serif;
+  color: hsl(0, 0%, 25%);
+}
+
+.righttext h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.righttext h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.button {
+  background-color: hsl(0, 0%, 30%);
+  width: 85%;
+  transition: background-color 0.1s ease-in 0s;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 50%);
+  width: 85%;
+}
+
+.button h3 {
+  font-weight: 300;
+  color: hsl(0, 100%, 100%);
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center;
+}
+
+/* Information */
+.information {
+  display: flex;
+  background-color: ;
+}
+
+.left {
+  width: 60%;
+  margin: 4rem 3rem 0rem 3rem;
+}
+
+.leftimage {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.left h2,
+h4,
+h5 {
+  font-family: "Open Sans", serif;
+  color: hsl(0, 0%, 25%);
+}
+
+.left h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.left h4 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.left h5 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.right {
+  background-color: ;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  border-left: hsl(0, 0%, 85%) solid 0.5rem;
+}
+
+.box {
+  display: flex;
+  vertical-align: middle;
+}
+
+.box:hover {
+  background-color: hsl(0, 0%, 85%);
+  transition: background-color 0.1s ease-in 0s;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+  margin: 2rem;
+}
+
+.boximage {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text h2,
+h5 {
+  font-family: "Open Sans", serif;
+  color: hsl(0, 0%, 25%);
+}
+
+.text h2 {
+  color: hsl(0, 0%, 15%);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0rem;
+}
+
+.text h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.link {
+  font-size: 2rem;
+  color: 	hsl(210, 100%, 60%);
+  font-weight: 300;
+}
+
+/* Courses */
+
+.courses {
+  background-color: hsl(0, 0%, 85%);
+  width: 100%;
+}
+
+.courses h2,
+h1,
+h4 {
+  font-family: "Open Sans", serif;
+  color: hsl(0, 0%, 15%);
+}
+
+.courses h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.courseboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0rem 5rem 4rem 9rem;
+}
+
+.courseboxsmall {
+  background-color: ;
+  width: 30%;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+}
+
+.courseimage {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.courseboxsmall h2 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.courseboxsmall h4 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.course h4 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 1rem 0rem 2rem 2rem;
+}
+
+/* Thesis */
+
+.thesistitle {
+  margin: 0;
+}
+
+.thesistitle h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 4rem 0rem 4rem 0rem;
+  text-align: center;
+}
+
+.thesis {
+  display: flex;
+  background-color: ;
+  height: 100rem;
+}
+
+.left {
+  width: 60%;
+  margin: 0rem 3rem 0rem 3rem;
+}
+
+.leftvideo {
+  width: 100%;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis .left {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.right1 {
+  background-color: ;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 2rem;
+  padding-top: 0.25rem;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+  margin: 2rem;
+}
+
+.boximage {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diff {
+  font-weight: 400;
+}
