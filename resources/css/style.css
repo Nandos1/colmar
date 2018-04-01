@@ -7,17 +7,23 @@ html {
 
 .headercontainer {
   background-color: hsl(0, 100%, 100%);
+  display: inline-block;
   top: 0;
-  display: flex;
   height: 8rem;
   width: 100%;
 }
 
+@media only screen and (min-width: 481px) {
+.mobileimg {
+  display: none;
+}
+}
 
 .logo {
   margin-left: 3rem;
   display: flex;
   vertical-align: baseline;
+  float: left;
 }
 
 .logoimg {
@@ -47,7 +53,6 @@ html {
   display: flex;
   padding-right: 3rem;
   height: 8rem;
-  border: black solid 4px;
 }
 
 p {
@@ -61,6 +66,45 @@ p {
 .header .p {
   text-align: left;
   margin-right: 24px:
+}
+
+@media only screen and (max-width: 480px) {
+  .headercontainer {
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    height: 8rem;
+    width: 100%;
+  }
+
+  .mobileimage {
+    display: inline-block;
+    height: 6rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logoimg {
+   display: none;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .menu {
+   display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .header .p {
+    display: none;
+  }
 }
 
 /* Banner */
@@ -126,6 +170,68 @@ h3 {
   color: hsl(0, 100%, 100%);
   padding: 1rem 5rem 1rem 5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    height: 500px;
+  }
+
+  .left {
+    background-image: url("/../capstone_colmar_assets/images/banner.jpg");
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .leftimage {
+    display: none;
+  }
+
+  .banner .right {
+    display: block;
+    background-color: hsl(0, 0%, 85%);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .righttext {
+    width: 90%;
+  }
+
+  .righttext h2,
+  h3 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 25%);
+  }
+
+  .righttext h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .righttext h3 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .button {
+    background-color: hsl(0, 0%, 50%);
+    width: 85%;
+  }
+
+  .button h3 {
+    font-weight: 300;
+    color: hsl(0, 100%, 100%);
+    padding: 1rem 5rem 1rem 5rem;
+    text-align: center;
+  }
+
 }
 
 /* Information */
@@ -232,6 +338,75 @@ h5 {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 480px) {
+  .information {
+    display: block;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    display: block;
+    width: 100%;
+    margin: 2rem;
+    border-left: none;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .box:hover {
+    background-color: hsl(0, 100%, 100%);
+  }
+
+  .image {
+    width: 2rem;
+    height: auto;
+    margin: 0;
+  }
+
+  .boximage {
+    width:  2rem;
+    height: auto;
+  }
+
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text h2,
+  h5 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 25%);
+  }
+
+  .text h2 {
+    color: hsl(0, 0%, 15%);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0rem;
+  }
+
+  .text h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
+  }
+
+  .link {
+    font-size: 2rem;
+    color: 	hsl(210, 100%, 60%);
+    font-weight: 300;
+  }
+
+
 /* Courses */
 
 .courses {
@@ -262,10 +437,14 @@ h4 {
 }
 
 .courseboxsmall {
-  background-color: ;
+  background-color: hsl(0, 100%,100%);
   width: 30%;
   margin-right: 4rem;
   margin-bottom: 4rem;
+}
+
+#bottom {
+  margin-bottom: 6rem;
 }
 
 .courseimage {
@@ -291,6 +470,63 @@ h4 {
   font-weight: 300;
   font-size: 2rem;
   margin: 1rem 0rem 2rem 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .courses {
+    background-color: hsl(0, 100%, 100%);
+    width: 100%;
+  }
+
+  .courses h2,
+  h1,
+  h4 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 15%);
+  }
+
+  .courses h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .courseboxes {
+    display: block;
+    margin: 0px;
+}
+
+  .courseboxsmall {
+    background-color: hsl(0, 0, 85%);
+    width: 100%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #bottom {
+    margin-bottom: 1rem;
+  }
+
+  .courseimage {
+   display: none;
+  }
+
+  .courseboxsmall h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 2rem 0rem 3rem 2rem;
+    background-color: hsl(0, 0%, 85%);
+  }
+
+  .courseboxsmall h4 {
+    display: none;
+  }
+
+  .course h4 {
+    display: none;
+  }
 }
 
 /* Thesis */
@@ -362,4 +598,75 @@ video {
 
 .diff {
   font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesistitle {
+    margin: 0;
+  }
+
+  .thesistitle h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 4rem 0rem 2rem 0rem;
+    text-align: center;
+  }
+
+  .thesis {
+    display: flex;
+    height: 100rem;
+  }
+
+  .left {
+    width: 100%
+    margin: 0rem 0rem 3rem 0rem;
+  }
+
+  .leftvideo {
+    width: 100%;
+    margin-bottom: 3rem;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis .left {
+    font-weight: 400;
+    font-size: 4rem;
+  }
+
+  .right1 {
+    display: none;
+  }
+
+/* copyright */
+
+.copyright {
+  width: 100%;
+  border-top: hsl(0, 0%, 85%) 0.1rem solid;
+  padding-bottom: 3rem;
+}
+
+.copyright h3 {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .copyright {
+    width: 100%;
+    border-top: hsl(0, 0%, 85%) 0.1rem solid;
+    padding-bottom: 2rem;
+  }
+
+  .copyright h3 {
+    margin: 2rem 0rem 0rem 3rem;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
+  }
 }
