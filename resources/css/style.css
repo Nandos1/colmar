@@ -148,6 +148,7 @@ p {
   flex-direction: column;
   justify-content: center;
   background-color: hsl(0, 0%, 85%);
+  margin-bottom: 0rem;
 }
 
 .righttext {
@@ -360,8 +361,82 @@ h5 {
 
 .link {
   font-size: 2rem;
-  color: 	hsl(210, 100%, 60%);
+  color: hsl(210, 100%, 60%);
   font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .information {
+    display: flex;
+    background-color: hsl(0, 100%, 100%);
+    border-top: hsl(0, 0%, 85%) solid 0.1rem;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    background-color: hsl(0, 100%, 100%);
+    display: block;
+    width: 100%;
+    margin: 2rem;
+    border-left: 0;
+  }
+
+  .box {
+    display: block;
+    width: 100%
+  }
+
+  .box:hover {
+    background-color: hsl(0, 100%, 100%);
+    width: 100%
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .boximage {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text h2,
+  h5 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 25%);
+  }
+
+  .text h2 {
+    color: hsl(0, 0%, 15%);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0rem;
+  }
+
+  .text h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
+  }
+
+  .link {
+    font-size: 2rem;
+    color: 	hsl(210, 100%, 60%);
+    font-weight: 300;
+  }
 }
 
 /* Courses */
@@ -423,6 +498,62 @@ h4 {
   font-weight: 300;
   font-size: 2rem;
   margin: 1rem 0rem 2rem 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .courses {
+    background-color: hsl(0, 100%, 100%);
+    width: 100%;
+    padding-bottom: 3rem;
+    border-top: hsl(0, 0%, 85%) solid 0.1rem;
+    border-bottom: hsl(0, 0%, 85%) solid 0.1rem;
+  }
+
+  .courses h2,
+  h1,
+  h4 {
+    font-family: "Open Sans", serif;
+    color: hsl(0, 0%, 15%);
+  }
+
+  .courses h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .courseboxes {
+    display: block;
+    margin: 0rem;
+  }
+
+  .courseboxsmall {
+    background-color: hsl(0, 0%, 85%);
+    width: 100%;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .courseimage {
+    display: none;
+  }
+
+  .courseboxsmall h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    padding: 2rem 0rem 3rem 2rem;
+  }
+
+  .courseboxsmall h4 {
+    display: none;
+  }
+
+  .course h4 {
+    display: none;
+  }
 }
 
 /* Thesis */
